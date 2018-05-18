@@ -1,4 +1,6 @@
 Check out the project: [BIT book](https://dule012.github.io/bit-book-react.js)(You have to register first)
+
+It works just clone it and try :)
 ## Stack
 ### Language: 
 - HTML5 
