@@ -2,7 +2,7 @@ class AuthenticationService {
 
 
     sendRegistrationData(data) {
-        return fetch(`http://bitbookapi.azurewebsites.net/api/register`, {
+        return fetch(`https://bitbookapi.azurewebsites.net/api/register`, {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -13,7 +13,7 @@ class AuthenticationService {
     }
 
     sendLoginData(data) {
-        return fetch(`http://bitbookapi.azurewebsites.net/api/login`, {
+        return fetch(`https://bitbookapi.azurewebsites.net/api/login`, {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

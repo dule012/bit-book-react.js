@@ -17,7 +17,7 @@ class PostService {
 
     allData(query) {
         
-        return fetch(`http://bitbookapi.azurewebsites.net/api/Posts${query}`, {
+        return fetch(`https://bitbookapi.azurewebsites.net/api/Posts${query}`, {
             headers: this.generateHeaders(),
             method: 'GET'
         })
@@ -42,7 +42,7 @@ class PostService {
     }
 
     getTextPost(id) {
-        return fetch(`http://bitbookapi.azurewebsites.net/api/TextPosts/${id}`, {
+        return fetch(`https://bitbookapi.azurewebsites.net/api/TextPosts/${id}`, {
             headers: this.generateHeaders(),
             method: 'GET'
         })
@@ -59,7 +59,7 @@ class PostService {
     }
 
     getImagePost(id) {
-        return fetch(`http://bitbookapi.azurewebsites.net/api/ImagePosts/${id}`, {
+        return fetch(`https://bitbookapi.azurewebsites.net/api/ImagePosts/${id}`, {
             headers: this.generateHeaders(),
             method: 'GET'
         })
@@ -76,7 +76,7 @@ class PostService {
     }
 
     getVideoPost(id) {
-        return fetch(`http://bitbookapi.azurewebsites.net/api/VideoPosts/${id}`, {
+        return fetch(`https://bitbookapi.azurewebsites.net/api/VideoPosts/${id}`, {
             headers: this.generateHeaders(),
             method: 'GET'
         })
@@ -103,7 +103,7 @@ class PostService {
     }
 
     deletePost(id) {
-        return fetch(`http://bitbookapi.azurewebsites.net/api/posts/${id}`, {
+        return fetch(`https://bitbookapi.azurewebsites.net/api/posts/${id}`, {
             headers: this.generateHeaders(),
             method: 'DELETE'
         })

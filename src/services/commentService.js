@@ -3,7 +3,7 @@ import { Component } from 'react';
 class commentsService extends Component {
 
     getCommentByPostId(postId) {
-        return fetch(`http://bitbookapi.azurewebsites.net/api/Comments?postId=${postId}`, {
+        return fetch(`https://bitbookapi.azurewebsites.net/api/Comments?postId=${postId}`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Key': 'C863071',
@@ -27,7 +27,7 @@ class commentsService extends Component {
     }
 
     postComment(postId, commentText) {
-        return fetch('http://bitbookapi.azurewebsites.net/api/Comments', {
+        return fetch('https://bitbookapi.azurewebsites.net/api/Comments', {
             headers: {
                 'Content-Type': 'application/json',
                 'Key': 'C863071',

@@ -14,7 +14,7 @@ class userServices {
     }
 
     getUsers() {
-        return fetch(`http://bitbookapi.azurewebsites.net/api/users`, {
+        return fetch(`https://bitbookapi.azurewebsites.net/api/users`, {
             headers: this.generateHeaders(),
             method: 'GET'
         })
@@ -33,7 +33,7 @@ class userServices {
     }
 
     getProfile() {
-        return fetch(`http://bitbookapi.azurewebsites.net/api/profile`, {
+        return fetch(`https://bitbookapi.azurewebsites.net/api/profile`, {
             headers: this.generateHeaders(),
             method: 'GET'
         })
@@ -50,7 +50,7 @@ class userServices {
     }
 
     getUserDetail(id) {
-        return fetch(`http://bitbookapi.azurewebsites.net/api/users/${id}`, {
+        return fetch(`https://bitbookapi.azurewebsites.net/api/users/${id}`, {
             headers: this.generateHeaders(),
             method: 'GET'
         })
